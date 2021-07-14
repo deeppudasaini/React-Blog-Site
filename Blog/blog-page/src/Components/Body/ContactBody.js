@@ -1,5 +1,5 @@
 import React from 'react'
-import AddContact from '../Form/AddPost'
+import AddContact from '../Form/AddContact'
 export default function ContactBody() {
     return (
         <div className="container">

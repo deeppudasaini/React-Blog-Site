@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AddPost() {
+export default function AddContact() {
     return (
         <div>
             <form id="contactForm" name="sentMessage" novalidate="novalidate" method="POST">
@@ -12,7 +12,7 @@ export default function AddPost() {
                    <div className="form-group floating-label-form-group controls"><label>Email Address</label><input className="form-control" type="email" id="email" name="email" required="" placeholder="Email Address" /><small className="form-text text-danger help-block"></small></div>
                </div>
                <div className="control-group">
-                   <div classNameName="form-group floating-label-form-group controls"><label>Phone Number</label><input className="form-control" type="tel" id="phone" name="number" required="" placeholder="Phone Number" /><small className="form-text text-danger help-block"></small></div>
+                   <div className="form-group floating-label-form-group controls"><label>Phone Number</label><input className="form-control" type="tel" id="phone" name="number" required="" placeholder="Phone Number" /><small className="form-text text-danger help-block"></small></div>
                </div>
                <div className="control-group">
                    <div className="form-group floating-label-form-group controls mb-3"><label>Message</label><textarea className="form-control" id="message" name="message" data-validation-required-message="Please enter a message." required="" placeholder="Message" rows="5"></textarea><small className="form-text text-danger help-block"></small></div>

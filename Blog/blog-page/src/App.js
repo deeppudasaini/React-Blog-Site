@@ -8,6 +8,7 @@ import ContactHeader from './Components/Header/ContactHeader'
 import { IndexBody } from './Components/Body/IndexBody';
 import AboutBody from './Components/Body/AboutBody';
 import ContactBody from './Components/Body/ContactBody';
+import AddPost from './Components/Form/AddPost';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 export default function App() {
@@ -35,7 +36,7 @@ export default function App() {
         <Switch>
   
           <Route path="/home">
-            <IndexHeader IndexStyle={indexDesign} />
+            <IndexHeader IndexStyle={indexDesign} title="Daily Post" sub="A Blog for Everyone" />
             <IndexBody singlePost={post} />
           </Route>
           <Route path="/about">
@@ -45,6 +46,10 @@ export default function App() {
           <Route path="/contact">
             <ContactHeader ContactStyle={contactDesign} />
             <ContactBody />
+          </Route>
+          <Route path="/upload">
+          <IndexHeader IndexStyle={indexDesign} title="Add Post" sub="Add post by filling below form" />
+          <AddPost />
           </Route>
 
         </Switch>

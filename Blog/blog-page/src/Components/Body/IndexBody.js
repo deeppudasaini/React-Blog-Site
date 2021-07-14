@@ -21,7 +21,7 @@ export const IndexBody = props => {
 
                     <hr />
 
-                    <div className="clearfix"><button className="btn btn-primary float-right" type="button">All Posts ⇒</button>
+                    <div className="clearfix"><button className="btn btn-primary float-right" type="button">Add Posts</button>
                     </div>
                 </div>
 
